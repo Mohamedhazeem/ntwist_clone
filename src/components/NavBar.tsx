@@ -24,9 +24,7 @@ export const NavBar = ({
               <BiSolidDownArrow />
               <div
                 className={` absolute bg-white rounded-md mt-5 p-4 translate-y-[60%] z-[1] transition duration-1000 ${
-                  isSubIndustryMenuShow
-                    ? "opacity-100 text-blue-700"
-                    : "opacity-0 text-red-700"
+                  isSubIndustryMenuShow ? "opacity-100" : "opacity-0"
                 }`}
               >
                 <ul className="leading-10">
