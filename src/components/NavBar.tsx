@@ -12,7 +12,7 @@ export const NavBar = ({
     <nav className=" absolute w-screen h-screen">
       <div className="flex flex-row justify-between items-center px-10 pt-2">
         <img className=" w-36 h-auto" src={logo} alt="NTWIST" />
-        <div className="md:block hidden">
+        <div className="lg:block hidden">
           <div className="flex flex-row gap-6 text-lg font-medium">
             <a href="#"> Home</a>
             <div
@@ -49,7 +49,7 @@ export const NavBar = ({
           </div>
         </div>
         <a
-          className="md:hidden block"
+          className="lg:hidden block"
           href=""
           onClick={(e) => {
             e.preventDefault();
