@@ -28,14 +28,21 @@ export const NavBar = ({
                 }`}
               >
                 <ul className="leading-10">
-                  <li> Sustainability</li>
-                  <li> Mineral Processing</li>
-                  <li> Mine-To-Mile-To-Mine Operation</li>
-                  <li> Oil and Gas</li>
+                  <li>
+                    <a href="#">Sustainability</a>
+                  </li>
+                  <li>
+                    <a href="#">Mineral Processing</a>
+                  </li>
+                  <li>
+                    <a href="#">Mine-To-Mile-To-Mine Operation</a>
+                  </li>
+                  <li>
+                    <a href="#">Oil and Gas</a>
+                  </li>
                 </ul>
               </div>
             </div>
-
             <a href="#"> AI Software</a>
             <a href="#"> Blog</a>
             <a href="#"> Contact Us</a>

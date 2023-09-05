@@ -9,7 +9,7 @@ export const Header = () => {
   const [isShowFullPageNavPanel, setShowFullPageNavPanel] = useState(false);
 
   return (
-    <>
+    <div>
       <NavBar
         isSubIndustryMenuShow={isSubIndustryMenuShow}
         setIsSubIndustryMenuShow={setIsSubIndustryMenuShow}
@@ -35,6 +35,6 @@ export const Header = () => {
         />
       }
       <img className="bg-cover h-screen" src={homeImage} alt=""></img>
-    </>
+    </div>
   );
 };

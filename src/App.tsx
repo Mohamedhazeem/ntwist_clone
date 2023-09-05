@@ -1,6 +1,7 @@
 import "./App.css";
 
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 export type navBarType = {
   isSubIndustryMenuShow: boolean;
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Header />
+      <Footer />
     </>
   );
 }

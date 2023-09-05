@@ -6,5 +6,5 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aquamarine;
+    overflow-x: hidden;
 }

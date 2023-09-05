@@ -43,18 +43,15 @@ export const ShowFullPageNavPanel = (props: navFullPagePanelType) => {
           >
             <ul>
               <li className="transition ease-linear delay-500  text-slate-500 hover:text-slate-700">
-                {" "}
                 Sustainability
               </li>
               <li className="transition ease-linear delay-500  text-slate-500 hover:text-slate-700">
-                {" "}
                 Mineral Processing
               </li>
               <li className="transition ease-linear delay-500  text-slate-500 hover:text-slate-700">
                 Mine-To-Mile-To-Mine Operation
               </li>
               <li className="transition ease-linear delay-500  text-slate-500 hover:text-slate-700">
-                {" "}
                 Oil and Gas
               </li>
             </ul>
