@@ -2,7 +2,7 @@ import { CardContent } from "../App";
 
 export const CardLeft = (props: CardContent) => {
   return (
-    <section className="flex lg:flex-row flex-col lg:px-20 px-10 py-10 gap-8">
+    <section className="flex lg:flex-row flex-col lg:px-20 px-10 lg:py-10 gap-8">
       <img
         className="lg:w-[50%] w-screen h-auto lg:p-0 p-6"
         src={props.image}

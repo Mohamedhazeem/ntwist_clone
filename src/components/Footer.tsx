@@ -2,7 +2,7 @@ import logo from "../assets/ntwistlight.png";
 import { AiFillTwitterSquare, AiFillLinkedin } from "react-icons/ai";
 export const Footer = () => {
   return (
-    <section className="flex flex-col items-center gap-7 p-8 m-0 bg-[#081528]">
+    <section className="flex flex-col items-center gap-7 p-10 bg-[#081528]">
       <img className=" w-40 h-auto" src={logo} alt="NTWIST" />
       <ul className="text-white flex flex-row flex-wrap justify-around gap-3">
         <li>

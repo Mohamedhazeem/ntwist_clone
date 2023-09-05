@@ -2,7 +2,7 @@ import { CardContent } from "../App";
 
 export const CardRight = (props: CardContent) => {
   return (
-    <section className="flex lg:flex-row flex-col lg:px-20 px-10 py-10 gap-8">
+    <section className="flex lg:flex-row flex-col lg:px-20 px-10 lg:py-10 gap-8">
       <div className="flex flex-col items-start justify-center">
         <div>
           <p className="pb-6 text-5xl font-semibold text-[#ff4e43]">
