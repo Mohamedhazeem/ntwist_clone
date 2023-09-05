@@ -1,19 +1,51 @@
 import { BiSolidDownArrow } from "react-icons/bi";
 import { RiMenu2Fill } from "react-icons/ri";
 import logo from "../assets/ntwistlight.png";
+import darkLogo from "../assets/ntwist-logo-dark.png";
 import { navBarType } from "../App";
+import { useEffect, useState } from "react";
 
 export const NavBar = ({
   setIsSubIndustryMenuShow,
   isSubIndustryMenuShow,
   setShowFullPageNavPanel,
 }: navBarType) => {
+  const [stickyClass, setStickyClass] = useState("");
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+
+    return () => {
+      window.removeEventListener("scroll", stickNavbar);
+    };
+  }, []);
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      const windowHeight = window.scrollY;
+      windowHeight > 5
+        ? setStickyClass("fixed z-50")
+        : setStickyClass("absolute");
+    }
+  };
   return (
-    <nav className=" absolute w-screen h-screen">
-      <div className="flex flex-row justify-between items-center px-10 pt-2">
-        <img className=" w-36 h-auto" src={logo} alt="NTWIST" />
+    <nav className={`${stickyClass} w-screen h-screen`}>
+      <div
+        className={`       
+        ${
+          stickyClass == "absolute" ? "bg-transparent" : "bg-white"
+        } flex flex-row justify-between items-center px-10 py-2`}
+      >
+        <img
+          className=" w-36 h-auto"
+          src={stickyClass == "absolute" ? logo : darkLogo}
+          alt="NTWIST"
+        />
         <div className="lg:block hidden">
-          <div className="flex flex-row gap-6 text-lg font-medium">
+          <div
+            className={` transition duration-700 ease-in-out 
+          ${
+            stickyClass == "absolute" ? "text-white" : "text-blue-800"
+          } flex flex-row gap-6 text-lg font-medium`}
+          >
             <a href="#"> Home</a>
             <div
               className="flex items-center"
@@ -21,7 +53,9 @@ export const NavBar = ({
               onMouseLeave={() => setIsSubIndustryMenuShow(false)}
             >
               <a href="#">Industries</a>
-              <BiSolidDownArrow />
+              <div className="mt-1 ml-1">
+                <BiSolidDownArrow size={10} />
+              </div>
               <div
                 className={` absolute bg-white rounded-md mt-5 p-4 translate-y-[60%] z-[1] transition duration-1000 ${
                   isSubIndustryMenuShow ? "opacity-100" : "opacity-0"
