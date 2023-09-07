@@ -4,6 +4,9 @@
 
 :root{
     box-sizing: border-box;
+    --footer-color: #081528;
+    --readmore-button-color: #ff3a2d;
+    --card-titles-color: #ff4e43;
 }
 body{
     overflow-x: hidden;
