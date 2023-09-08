@@ -2,7 +2,7 @@ import { BiSolidDownArrow } from "react-icons/bi";
 import { RiMenu2Fill } from "react-icons/ri";
 import logo from "../assets/ntwistlight.png";
 import darkLogo from "../assets/ntwist-logo-dark.png";
-import { navBarType } from "../App";
+import { navBarType } from "../pages/Home";
 import { useEffect, useState } from "react";
 
 export const NavBar = ({
@@ -22,12 +22,12 @@ export const NavBar = ({
     if (window !== undefined) {
       const windowHeight = window.scrollY;
       windowHeight > 5
-        ? setStickyClass("fixed z-50")
+        ? setStickyClass("fixed z-40")
         : setStickyClass("absolute");
     }
   };
   return (
-    <nav className={`${stickyClass} w-screen h-screen`}>
+    <nav className={`${stickyClass} w-screen`}>
       <div
         className={`       
         ${

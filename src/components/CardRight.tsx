@@ -1,4 +1,4 @@
-import { CardContent } from "../App";
+import { CardContent } from "../pages/Home";
 
 export const CardRight = (props: CardContent) => {
   return (
@@ -12,9 +12,11 @@ export const CardRight = (props: CardContent) => {
           <br />
           <p className="leading-7">{props.subDescription}</p>
         </div>
-        <button className="bg-[var(--readmore-button-color)] px-4 py-2 rounded-sm text-white font-semibold">
-          {props.buttonDescription}
-        </button>
+        {props.showButton && (
+          <button className="bg-[var(--readmore-button-color)] px-4 py-2 rounded-sm text-white font-semibold">
+            {props.buttonDescription}
+          </button>
+        )}
       </div>
       <img
         className="lg:w-[50%] w-screen lg:p-0 p-6"

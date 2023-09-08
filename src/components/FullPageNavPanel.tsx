@@ -1,6 +1,6 @@
 import { MdClose } from "react-icons/md";
 import logoDark from "../assets/ntwist-logo-dark.png";
-import { navFullPagePanelType } from "../App";
+import { navFullPagePanelType } from "../pages/Home";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useState } from "react";
 
