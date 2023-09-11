@@ -23,6 +23,7 @@ export type CardContent = {
   description: string;
   subDescription?: string;
   showButton?: boolean;
+  linkTo?: string;
   buttonDescription?: string;
   image: string;
 };
@@ -50,6 +51,7 @@ export const Home = () => {
         description="NTWIST’s newest product unlocks up to $250/oz in previously inaccessible value in open pit gold mines by connecting siloed data sources like block models, fleet management systems, stockpile surveys, and plant instruments. This allows your company to better track material flow, and feed properties, identify plan/production discrepancies, and correct resource models and production plans."
         showButton={true}
         buttonDescription="Read More"
+        linkTo="/mine"
         image={image1}
       />
       <CardLeft
@@ -58,6 +60,7 @@ export const Home = () => {
         subDescription="With the increasing relevance of carbon accounting and emissions tracking, NTWIST offers a suite of tools to increase visibility into environmental performance and help processing plants track, manage, optimize, and report key metrics."
         showButton={true}
         buttonDescription="Read More"
+        linkTo="/sustainability"
         image={image2}
       />
       <CardRight
@@ -65,6 +68,7 @@ export const Home = () => {
         description="NTWIST offers a number of solutions for mills, concentrators, and leach plants. Our solutions help operations to reduce the effect of feed variability, avoid downtime and increase peak throughput while decreasing energy and reagent consumption."
         showButton={true}
         buttonDescription="Read More"
+        linkTo="/mineral"
         image={image3}
       />
       <CardLeft
@@ -73,6 +77,7 @@ export const Home = () => {
         subDescription="NTWIST helps Oil & Gas customers to analyze historical data, identify opportunities for process control improvements, and reduce variability in any part of the process, thus providing enhanced reliability and safety."
         showButton={true}
         buttonDescription="Read More"
+        linkTo="/oil"
         image={image4}
       />
     </>

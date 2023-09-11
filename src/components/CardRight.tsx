@@ -1,4 +1,5 @@
 import { CardContent } from "../pages/Home";
+import { Link } from "react-router-dom";
 
 export const CardRight = (props: CardContent) => {
   return (
@@ -13,9 +14,12 @@ export const CardRight = (props: CardContent) => {
           <p className="leading-7">{props.subDescription}</p>
         </div>
         {props.showButton && (
-          <button className="bg-[var(--readmore-button-color)] px-4 py-2 rounded-sm text-white font-semibold">
+          <Link
+            to={props.linkTo || ""}
+            className="bg-[var(--readmore-button-color)] px-4 py-2 rounded-sm text-white font-semibold"
+          >
             {props.buttonDescription}
-          </button>
+          </Link>
         )}
       </div>
       <img
